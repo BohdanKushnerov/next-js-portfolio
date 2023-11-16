@@ -25,9 +25,9 @@ const Layout: FC<ILayout> = ({ children }) => {
     <div
       className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}
     >
-      <Header>
-        <Nav />
-      </Header>
+      <Header />
+
+      <Nav />
       <TopLeftImg />
       {/* <main className="h-full">{children}</main> */}
       {children}

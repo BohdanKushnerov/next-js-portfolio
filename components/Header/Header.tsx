@@ -1,14 +1,31 @@
-import React, { FC } from 'react'
+import Socials from "@components/Socials/Socials";
+import Image from "next/image";
+import Link from "next/link";
+import React, { FC } from "react";
 
-interface IHeader {
-  children: React.ReactNode;
-}
+// interface IHeader {
+//   children: React.ReactNode;
+// }
 
-const Header: FC<IHeader> = ({children}) => {
+const Header: FC = () => {
   return (
-    <header className="absolute z-30 w-full">
-      Header
-      {children}
+    <header className="absolute z-30 w-full flex items-center px-16 xl:px-0 xl:h-[90px]">
+      <div className="container mx-auto">
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-y-6 py-8">
+          {/* logo */}
+          <Link href={"/"}>
+            <Image
+              src={"/logo.svg"}
+              width={220}
+              height={48}
+              alt=""
+              priority={true}
+            />
+          </Link>
+          {/* socials */}
+          <Socials />
+        </div>
+      </div>
     </header>
   );
 };

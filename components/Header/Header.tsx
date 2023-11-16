@@ -1,11 +1,8 @@
-import Socials from "@components/Socials/Socials";
+import React, { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import React, { FC } from "react";
 
-// interface IHeader {
-//   children: React.ReactNode;
-// }
+import Socials from "@components/Socials/Socials";
 
 const Header: FC = () => {
   return (

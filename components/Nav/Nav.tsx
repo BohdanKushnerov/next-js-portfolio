@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import Link from "next/link";
-
+import { useRouter } from "next/router";
 import {
   HiHome,
   HiUser,
@@ -9,7 +9,6 @@ import {
   HiChatBubbleBottomCenterText,
   HiEnvelope,
 } from "react-icons/hi2";
-import { useRouter } from "next/router";
 
 export const navData = [
   { name: "home", path: "/", icon: <HiHome /> },

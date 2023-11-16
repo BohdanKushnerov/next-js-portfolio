@@ -28,8 +28,9 @@ const Layout: FC<ILayout> = ({ children }) => {
       <Header>
         <Nav />
       </Header>
-      <TopLeftImg/>
-      <main>{children}</main>
+      <TopLeftImg />
+      {/* <main className="h-full">{children}</main> */}
+      {children}
     </div>
   );
 };

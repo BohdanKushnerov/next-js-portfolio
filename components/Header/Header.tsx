@@ -4,10 +4,10 @@ interface IHeader {
   children: React.ReactNode;
 }
 
-const Header: FC<IHeader> = ({ children }) => {
+const Header: FC<IHeader> = ({children}) => {
   return (
-    <header>
-      *Header*
+    <header className="absolute z-30 w-full">
+      Header
       {children}
     </header>
   );

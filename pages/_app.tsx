@@ -5,6 +5,7 @@ import Layout from "@components/Layout/Layout";
 import "@styles/globals.css";
 import { AnimatePresence, motion } from "framer-motion";
 import { Transition } from "@components/Transition/Transition";
+import Head from "next/head";
 
 interface IMyApp {
   Component: FC;
@@ -14,14 +15,28 @@ interface IMyApp {
 const MyApp: FC<IMyApp> = ({ Component }) => {
   const router = useRouter();
   return (
-    <Layout>
-      <AnimatePresence mode="wait">
-        <motion.div key={router.route} className="h-full">
-          <Transition />
-          <Component />
-        </motion.div>
-      </AnimatePresence>
-    </Layout>
+    <>
+      <Head>
+        <title>Bohdan Kushnerov Portfolio</title>
+        <link rel="icon" type="image/png" href="/logo-icon.png" />
+        <meta
+          name="description"
+          content="Explore a collection of frontend projects showcasing my expertise in UI/UX development. From clean and intuitive interfaces to seamless user experiences, this personal portfolio highlights my dedication to crafting engaging digital solutions through frontend technologies."
+        ></meta>
+        {/* <meta
+          name="google-site-verification"
+          content="ucWXrGWx51u-n4BfgmVdfYxSJ32bvhnYxoqLilRg8Zw"
+        /> */}
+      </Head>
+      <Layout>
+        <AnimatePresence mode="wait">
+          <motion.div key={router.route} className="h-full">
+            <Transition />
+            <Component />
+          </motion.div>
+        </AnimatePresence>
+      </Layout>
+    </>
   );
 };
 

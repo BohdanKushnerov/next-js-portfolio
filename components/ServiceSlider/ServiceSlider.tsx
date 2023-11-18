@@ -1,3 +1,4 @@
+import { FC } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Pagination } from "swiper/modules";
 
@@ -44,7 +45,7 @@ const serviceData = [
   },
 ];
 
-const ServiceSlider = () => {
+const ServiceSlider: FC = () => {
   return (
     <Swiper
       breakpoints={{

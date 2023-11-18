@@ -1,6 +1,6 @@
-import React, { FC } from "react";
-import Image from "next/image";
+import { FC } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 import Socials from "@components/Socials/Socials";
 

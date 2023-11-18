@@ -1,4 +1,4 @@
-import React, { ReactElement, useState } from "react";
+import { FC, ReactElement, useState } from "react";
 import { motion } from "framer-motion";
 import {
   FaHtml5,
@@ -123,7 +123,7 @@ const aboutChapters: AboutChapter[] = [
   },
 ];
 
-const About = () => {
+const About: FC = () => {
   const [index, setIndex] = useState<number>(0);
 
   return (

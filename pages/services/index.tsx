@@ -1,4 +1,4 @@
-import React from "react";
+import { FC } from "react";
 import { motion } from "framer-motion";
 
 import Circles from "@components/Circles/Circles";
@@ -6,7 +6,7 @@ import Bulb from "@components/Bulb/Bulb";
 import ServiceSlider from "@components/ServiceSlider/ServiceSlider";
 import { fadeIn } from "@constants/fadeAnimations";
 
-const Services = () => {
+const Services: FC = () => {
   return (
     <div className="h-full bg-primary/30 py-36 flex items-center">
       <Circles />

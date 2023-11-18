@@ -1,11 +1,11 @@
 import React, { FC } from "react";
 import { useRouter } from "next/router";
+import Head from "next/head";
+import { AnimatePresence, motion } from "framer-motion";
 
 import Layout from "@components/Layout/Layout";
-import "@styles/globals.css";
-import { AnimatePresence, motion } from "framer-motion";
 import { Transition } from "@components/Transition/Transition";
-import Head from "next/head";
+import "@styles/globals.css";
 
 interface IMyApp {
   Component: FC;

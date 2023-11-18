@@ -4,16 +4,13 @@ import { Sora } from "next/font/google";
 import Nav from "@components/Nav/Nav";
 import Header from "@components/Header/Header";
 import TopLeftImg from "@components/TopLeftImg/TopLeftImg";
+import { ILayout } from "interfaces/ILayout";
 
 const sora = Sora({
   subsets: ["latin"],
   variable: "--font-sora",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
 });
-
-interface ILayout {
-  children: React.ReactNode;
-}
 
 const Layout: FC<ILayout> = ({ children }) => {
   return (

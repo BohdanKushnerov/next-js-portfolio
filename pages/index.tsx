@@ -1,3 +1,4 @@
+import { FC } from "react";
 import { motion } from "framer-motion";
 
 import Avatar from "@components/Avatar/Avatar";
@@ -5,7 +6,7 @@ import ParticlesContainer from "@components/ParticlesContainer/ParticlesContaine
 import ProjectsBtn from "@components/ProjectsBtn/ProjectsBtn";
 import { fadeIn } from "@constants/fadeAnimations";
 
-const Home = () => {
+const Home: FC = () => {
   return (
     <div className="bg-primary/60 h-full w-full">
       {/* text  */}

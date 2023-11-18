@@ -1,22 +1,12 @@
+import { FC } from "react";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
+import { BsArrowRight } from "react-icons/bs";
 
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-
-import {
-  RxCrop,
-  RxPencil2,
-  RxDesktop,
-  RxReader,
-  RxRocket,
-  RxArrowTopRight,
-} from "react-icons/rx";
-
-import { BsArrowRight } from "react-icons/bs";
-import { after } from "node:test";
-import Image from "next/image";
 
 const projectsSlides = {
   slides: [
@@ -63,7 +53,7 @@ const projectsSlides = {
   ],
 };
 
-const ProjectsSlider = () => {
+const ProjectsSlider: FC = () => {
   return (
     <Swiper
       spaceBetween={10}

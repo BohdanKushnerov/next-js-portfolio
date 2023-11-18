@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 
 import Circles from "@components/Circles/Circles";
 import Bulb from "@components/Bulb/Bulb";
-import ServiceSlider from "@components/ServiceSlider/ServiceSlider";
+import ProjectsSlider from "@components/ProjectsSlider/ProjectsSlider";
 import { fadeIn } from "@constants/fadeAnimations";
 
-const Services = () => {
+const Projects = () => {
   return (
     <div className="h-full bg-primary/30 py-36 flex items-center">
       <Circles />
@@ -15,13 +15,13 @@ const Services = () => {
           {/* text */}
           <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
             <motion.h2
-              variants={fadeIn("up", 0.3)}
+              variants={fadeIn("up", 0.2)}
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2 xl:mt-8"
+              className="h2 xl:mt-12"
             >
-              My services <span className="text-accent">.</span>
+              My projects <span className="text-accent">.</span>
             </motion.h2>
             <motion.p
               variants={fadeIn("up", 0.4)}
@@ -42,7 +42,7 @@ const Services = () => {
             exit="hidden"
             className="w-full xl:max-w-[65%]"
           >
-            <ServiceSlider />
+            <ProjectsSlider />
           </motion.div>
         </div>
       </div>
@@ -51,4 +51,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Projects;

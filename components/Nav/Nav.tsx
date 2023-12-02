@@ -21,8 +21,8 @@ const navData = [
     icon: <HiChatBubbleBottomCenterText />,
   },
   {
-    name: "contacts",
-    path: "/contacts",
+    name: "contact",
+    path: "/contact",
     icon: <HiEnvelope />,
   },
 ];
